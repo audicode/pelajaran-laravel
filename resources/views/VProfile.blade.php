@@ -2,9 +2,8 @@
 @section('Content')
 
 
-
-
 <a href="#" onclick="ModalTambahProfile()"  class="btn btn-success"> + Add New Data</a>
+
 
 
 <table class="table table-bordered">
@@ -18,9 +17,9 @@
         <td>{{ $Get->kd_profile }}</td>
         <td>{{ $Get->nama_profile }}</td>
         <td>
-            <a href="/controller/edit/{{ $Get->kd_profile }}" class="btn btn-info">Update</a>
+            <a href="/controller/edit/{{ $Get->kd_proflie }}" class="btn btn-info">Update</a>
 
-            <a href="#" onclick="ModalHapusProfile({{ $Get->kd_profile }})" class="btn btn-danger">Delete</a>
+            <a href="#" onclick="ModalHapusProfile({{ $Get->kd_profie }})" class="btn btn-danger">Delete</a>
 
         <td>
     </tr>
@@ -28,7 +27,7 @@
 </table>
 
 <!-- Form Modal Tambah Berita -->
-<form action="profile/tambah" method="post">
+<form action="Profile/tambah" method="post">
     @csrf
 <div class="modal fade" id="ModalTambahProfile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog ">
@@ -81,7 +80,6 @@
 </form>
   <!-- Form Modal Hapus Berita-->
 
-
 <script>
 
     // Modal Tambah Berita
@@ -101,3 +99,4 @@ function ModalHapusProfile ($id) {
 
 
 @endsection
+

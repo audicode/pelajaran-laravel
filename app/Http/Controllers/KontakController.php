@@ -30,7 +30,6 @@ class KontakController extends Controller
  
     }
 
-
     public function hapus(Request $request)
     {
 		$kd_kontak=$request->kd_kontak;

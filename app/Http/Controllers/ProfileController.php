@@ -30,11 +30,10 @@ class ProfileController extends Controller
  
     }
 
-
     public function hapus(Request $request)
     {
-		$kd_profile=$request->kd_profile;
-		DB::table('profile')->where('kd_profile',$kd_profile)->delete();
+		$kd_berita=$request->kd_berita;
+		DB::table('berita')->where('kd_berita',$kd_berita)->delete();
 
 		// alihkan halaman ke halaman berita
 		return redirect('/berita');

@@ -2,7 +2,6 @@
 @section('Content')
 
 
-
 <a href="#" onclick="ModalTambahKontak()"  class="btn btn-success"> + Add New Data</a>
 
 
@@ -26,7 +25,6 @@
     </tr>
     @endforeach
 </table>
-
 
 <!-- Form Modal Tambah Berita -->
 <form action="kontak/tambah" method="post">
@@ -59,6 +57,7 @@
 </form>
 <!-- Form Modal Tambah Berita -->
 
+
 <!-- Form Modal Hapus Berita-->
 <form action="kontak/hapus" method="post">
     @csrf
@@ -81,7 +80,6 @@
 </form>
   <!-- Form Modal Hapus Berita-->
 
-
 <script>
 
     // Modal Tambah Berita
@@ -100,5 +98,5 @@ function ModalHapusKontak ($id) {
    </script>
 
 
-
 @endsection
+

@@ -17,16 +17,13 @@ use App\Http\Controllers\ProfileController;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', function () {  
     return view('Layout');
 });
-
-
 
 Route::get('berita',[BeritaController::class,'index']);
 Route::post('berita/tambah',[BeritaController::class,'tambah']);
 Route::post('berita/hapus',[BeritaController::class,'hapus']);
-
 
 Route::get('kontak',[KontakController::class,'index']);
 Route::post('kontak/tambah',[KontakController::class,'tambah']);
