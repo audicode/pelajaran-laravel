@@ -39,5 +39,17 @@ class BeritaController extends Controller
 		return redirect('/berita');
  
     }
+
+    public function edit(Request $request)
+    {
+    	DB::table('berita')->where('kd_berita',$request->kd_berita)->update([
+		
+			'nama_berita' => $request->nama_berita,
+
+		]);
+		// alihkan halaman ke halaman berita
+		return redirect('/berita');
+ 
+    }
 }
 

@@ -19,11 +19,12 @@ use App\Http\Controllers\ProfileController;
 
 Route::get('/', function () {  
     return view('Layout');
-});
+ });
 
 Route::get('berita',[BeritaController::class,'index']);
 Route::post('berita/tambah',[BeritaController::class,'tambah']);
 Route::post('berita/hapus',[BeritaController::class,'hapus']);
+Route::post('berita/edit',[BeritaController::class,'edit']);
 
 Route::get('kontak',[KontakController::class,'index']);
 Route::post('kontak/tambah',[KontakController::class,'tambah']);
